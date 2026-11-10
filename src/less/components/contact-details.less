@@ -1,0 +1,40 @@
+.contacts-box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 28px;
+
+  &::before {
+    content: "";
+    width: 274px;
+    height: 274px;
+    .sprite-mask(earth);
+    background-color: var(--link-color);
+  }
+
+  &__info {
+    max-width: 375px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  &__link,
+  &__address,
+  &__schedule {
+    text-transform: uppercase;
+    display: block;
+  }
+
+  &__address {
+    margin-bottom: 20px;
+    max-width: 360px;
+  }
+
+  &__schedule {
+    margin-bottom: 70px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

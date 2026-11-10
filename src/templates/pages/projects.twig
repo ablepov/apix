@@ -1,0 +1,58 @@
+{% extends "../layout.twig" %}
+
+{% block title %}Проекты — АПИКС{% endblock %}
+
+{% block content %}
+<span class="plug"></span>
+
+				<section class="projects-page">
+	<div class="container">
+		<div class="projects-page__top">
+			<h1 class="projects-page__title title-page">ПРОЕКТЫ</h1>
+
+			<ul class="projects-page__list projects-list">
+				<li class="projects-list__item">
+					<span class="projects-list__num">160+</span>
+
+					<span class="projects-list__text">НОВЫХ РЕШЕНИЙ</span>
+				</li>
+
+				<li class="projects-list__item">
+					<span class="projects-list__num">80+</span>
+
+					<span class="projects-list__text">ПРОЕКТОВ</span>
+				</li>
+
+				<li class="projects-list__item">
+					<span class="projects-list__num">37</span>
+
+					<span class="projects-list__text">ЗАКАЗЧИКОВ</span>
+				</li>
+
+				<li class="projects-list__item">
+					<span class="projects-list__num">14</span>
+
+					<span class="projects-list__text">СТРАН</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<ul class="projects-page__content">
+		{% for card in 1..5 %}
+		<li class="projects-page__item">
+			<div class="projects-page__container container">
+				<a class="projects-page__link" href="inner-project.html">жилой дом с подземной автостоянкой</a>
+
+				<a class="projects-page__image-link" href="inner-project.html" aria-label="Жилой дом с подземной автостоянкой">
+					<picture>
+						<source type="image/webp" srcset="images/projects/10.webp">
+						<img class="projects-page__img" src="images/projects/10.jpg" alt="">
+					</picture>
+				</a>
+			</div>
+		</li>
+		{% endfor %}
+	</ul>
+</section>
+{% endblock %}

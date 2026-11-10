@@ -1,0 +1,310 @@
+@media (max-width: @screen-tablet) {
+  .burger {
+    display: block;
+    order: 3;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .lang {
+    order: 2;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  .services__body {
+    max-width: none;
+    margin-right: 0;
+  }
+
+  .services-info {
+    display: none;
+  }
+
+  .about {
+    &::before {
+      display: none;
+    }
+
+    &__text {
+      max-width: none;
+    }
+
+    &__body {
+      max-width: none;
+    }
+  }
+
+  .projects-page {
+    &__top {
+      display: block;
+    }
+
+    &__title {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      padding-top: 73px;
+
+      &--active::before {
+        background-image: url("../images/projects-decor-m.svg");
+        height: 37px;
+        width: 100%;
+        left: 0;
+      }
+    }
+
+    &__link {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+
+  .projects-list {
+    max-width: none;
+  }
+}
+
+@media (max-width: @screen-small-tablet) {
+  body {
+    line-height: 1.166;
+  }
+
+  .link {
+    line-height: 1.14;
+    color: var(--orange);
+
+    &::after {
+      border-color: transparent transparent transparent var(--orange);
+    }
+  }
+
+  .burger {
+    width: 24px;
+    height: 16px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .header {
+    padding: 19px 0;
+  }
+
+  .footer {
+    &.white {
+      --footer-color: var(--gray);
+    }
+
+    &__body {
+      background-color: var(--white);
+    }
+
+    &__images {
+      display: none;
+    }
+  }
+
+  .main-hero {
+    padding-top: 29px;
+    height: auto;
+    padding-bottom: 20px;
+
+    &__title {
+      font-size: 40px;
+    }
+  }
+
+  .services__link {
+    line-height: 1.18;
+  }
+
+  .project-carousel {
+    &__body {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__slider {
+      margin-right: -20px;
+    }
+  }
+
+  .contacts {
+    height: auto;
+    min-height: 0;
+
+    &__body {
+      width: auto;
+      height: auto;
+      padding-right: 0;
+    }
+
+    &__title {
+      order: 1;
+      margin-bottom: 30px;
+    }
+
+    &__contacts-box {
+      margin-top: 20px;
+      margin-bottom: 63px;
+      order: 2;
+
+      &::before {
+        position: static;
+        top: auto;
+        right: auto;
+      }
+    }
+
+    &__list {
+      flex-wrap: wrap;
+      order: 4;
+      margin-top: 0;
+    }
+
+    &__item {
+      width: calc(50% - 15px);
+    }
+
+  }
+
+  .about-hero {
+    &__container {
+      flex-direction: column-reverse;
+    }
+
+    &__image-box {
+      margin-bottom: 62px;
+    }
+
+    &__img {
+      width: 100%;
+      padding-left: 80px;
+    }
+  }
+
+  .projects {
+    &__content {
+      transform: rotate(-14deg) translate(-10%, -10%) scale(1.2);
+    }
+
+    &__item:not(:last-child) {
+      padding-right: 6px;
+    }
+  }
+
+  .marquee3k:not(:last-child) {
+    margin-bottom: 2px;
+  }
+
+  .team {
+    &__body {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__slider {
+      margin-right: -20px;
+    }
+  }
+
+  .partners {
+    &__body {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__slider {
+      margin-right: -20px;
+    }
+
+    &__img {
+      max-height: 126px;
+      margin: 0;
+    }
+  }
+
+  .awards {
+    &__body {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &__slider {
+      margin-right: -20px;
+    }
+  }
+
+  .inner-service {
+    &__item {
+      width: calc(50% - 4px);
+
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .projects-page {
+    &__container {
+      display: block;
+    }
+
+    &__link {
+      margin-bottom: 29px;
+      max-width: none;
+    }
+
+    &__image-link {
+      max-width: none;
+      height: auto;
+      padding-bottom: 62.05%;
+    }
+  }
+
+  .projects-list {
+    display: block;
+
+    &__item:not(:last-child) {
+      margin-right: 0;
+      margin-bottom: 8px;
+    }
+
+    &__num {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    &__text {
+      display: inline-block;
+    }
+  }
+
+  .project-text {
+    &__list > p,
+    &__item {
+      max-width: calc(50% - 20px);
+    }
+
+    &__list > p:nth-child(odd),
+    &__item:nth-child(odd) {
+      max-width: calc(50% - 20px);
+    }
+  }
+}
+
+@media (max-width: @screen-small-tablet) and (max-width: @fluid-end) {
+  .about-hero__img {
+    .fluid(padding-left; 38px; 80px);
+  }
+}

@@ -1,0 +1,135 @@
+{% extends "../layout.twig" %}
+
+{% block title %}Авторский надзор — АПИКС{% endblock %}
+
+{% block content %}
+<span class="plug"></span>
+
+				<section class="inner-service">
+	<div class="inner-service__top">
+		<div class="inner-service__container container">
+			<div class="inner-service__wrapper">
+				<h1 class="inner-service__title">Авторский надзор</h1>
+
+				<img class="inner-service__icon" src="images/services/1.svg" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div class="inner-service__container container">
+		<div class="inner-service__body section-trigger">
+			<p>ООО «АПИКС» проводит контроль за соблюдением в процессе строительства требований проектной документации, технических характеристик и художественных замыслов проекта.</p>
+
+			<ul class="inner-service__inner section-trigger">
+				<li class="inner-service__item">
+					<div class="inner-service__image-box">
+						<picture>
+							<source type="image/webp" srcset="images/projects/1.webp">
+							<img src="images/projects/1.jpg" alt="">
+						</picture>
+					</div>
+				</li>
+
+				<li class="inner-service__item">
+					<div class="inner-service__image-box">
+						<picture>
+							<source type="image/webp" srcset="images/projects/2.webp">
+							<img src="images/projects/2.jpg" alt="">
+						</picture>
+					</div>
+				</li>
+			</ul>
+
+			<div class="inner-service__image-box-full section-trigger">
+				<picture>
+					<source type="image/webp" srcset="images/projects/clinic-card.webp">
+					<img src="images/projects/clinic-card.jpg" alt="">
+				</picture>
+			</div>
+
+			<h2>Заголовок</h2>
+
+			<p>ООО «АПИКС» проводит контроль за соблюдением в процессе строительства требований проектной документации, технических характеристик и художественных замыслов <a href="#">проекта.</a></p>
+
+			<ul>
+				<li>Пункт 1</li>
+				<li>Пункт 2</li>
+				<li>Пункт 3</li>
+			</ul>
+
+			<a href="#" download="">cкачать файл</a>
+			<a href="#" download="">cкачать файл</a>
+
+		</div>
+
+		<div class="project-carousel__body section-trigger">
+	<button class="project-carousel__btn project-carousel__btn--prev btn btn--left" type="button">
+		<span class="sr-only">Предыдущий слайд</span>
+	</button>
+
+	<div class="project-carousel__slider swiper swiper-container">
+		<ul class="project-carousel__wrapper swiper-wrapper">
+			<li class="project-carousel__item swiper-slide">
+				<a class="project-carousel__link" href="inner-project.html" aria-label="Жилой дом с подземной автостоянкой">
+					<div class="project-carousel__image-box">
+						<picture>
+							<source type="image/webp" srcset="images/projects/8.webp">
+							<img class="project-carousel__img" src="images/projects/8.jpg" alt="">
+						</picture>
+					</div>
+				</a>
+			</li>
+
+			<li class="project-carousel__item swiper-slide">
+				<a class="project-carousel__link" href="projects.html" aria-label="Открыть каталог проектов">
+					<div class="project-carousel__image-box">
+						<picture>
+							<source type="image/webp" srcset="images/projects/5.webp">
+							<img class="project-carousel__img" src="images/projects/5.jpg" alt="">
+						</picture>
+					</div>
+				</a>
+			</li>
+
+			<li class="project-carousel__item swiper-slide">
+				<a class="project-carousel__link" href="projects.html" aria-label="Открыть каталог проектов">
+					<div class="project-carousel__image-box">
+						<picture>
+							<source type="image/webp" srcset="images/projects/9.webp">
+							<img class="project-carousel__img" src="images/projects/9.jpg" alt="">
+						</picture>
+					</div>
+				</a>
+			</li>
+
+			<li class="project-carousel__item swiper-slide">
+				<a class="project-carousel__link" href="projects.html" aria-label="Открыть каталог проектов">
+					<div class="project-carousel__image-box">
+						<picture>
+							<source type="image/webp" srcset="images/projects/clinic-card.webp">
+							<img class="project-carousel__img" src="images/projects/clinic-card.jpg" alt="">
+						</picture>
+					</div>
+				</a>
+			</li>
+
+			<li class="project-carousel__item swiper-slide">
+				<a class="project-carousel__link" href="projects.html" aria-label="Открыть каталог проектов">
+					<div class="project-carousel__image-box">
+						<picture>
+							<source type="image/webp" srcset="images/projects/1.webp">
+							<img class="project-carousel__img" src="images/projects/1.jpg" alt="">
+						</picture>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<button class="project-carousel__btn project-carousel__btn--next btn btn--right" type="button">
+		<span class="sr-only">Следующий слайд</span>
+	</button>
+</div>
+	</div>
+</section>
+{% endblock %}

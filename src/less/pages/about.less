@@ -1,0 +1,323 @@
+.about-hero {
+  padding-top: 159px;
+  margin-bottom: 225px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 848px;
+    width: 100%;
+    margin-right: 95px;
+    padding-top: 32px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+  }
+
+  &__image-box {
+    position: relative;
+  }
+
+  &__img {
+    height: 315px;
+
+    &--orange {
+      filter: invert(23%) sepia(30%) saturate(6953%) hue-rotate(349deg) brightness(98%) contrast(88%);
+    }
+
+    &--white {
+      position: absolute;
+      top: 38px;
+      right: 80px;
+    }
+  }
+}
+
+.projects {
+  margin-bottom: 200px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  &__body {
+    height: 954px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__content {
+    transform: rotate(-7.43deg) translate(-10%, -10%) scale(1.2);
+    height: 1194px;
+  }
+
+  &__list {
+    display: flex;
+    height: 380px;
+  }
+
+  &__item {
+    height: 100%;
+    flex-shrink: 0;
+    background-color: var(--gray);
+
+    &:not(:last-child) {
+      padding-right: 18px;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 100%;
+  }
+
+  &__img {
+    height: 100%;
+    transition: transform 0.3s;
+  }
+}
+
+.marquee3k {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.team {
+  margin-bottom: 207px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 1px;
+  }
+
+  &__body {
+    position: relative;
+    padding-right: 144px;
+    padding-left: 144px;
+  }
+
+  &__slider {
+    padding-top: 50px;
+  }
+
+  &__image-box {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 74.47%;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  &__btn {
+    position: absolute;
+    top: calc(50% - 43px);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+}
+
+.about {
+  margin-bottom: 195px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -105px;
+    height: 100%;
+    width: 535px;
+    background: url("../images/sprite.svg#about-bg") center/cover no-repeat;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1430px;
+    margin-left: auto;
+    margin-bottom: 58px;
+
+    p {
+      width: calc(50% - 10px);
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 20px;
+      margin-right: 20px;
+    }
+
+    p:nth-child(odd) {
+      padding-right: 120px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    max-width: 1430px;
+    margin-left: auto;
+  }
+
+  &__item {
+    width: calc(50% - 10px);
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__image-box {
+    position: relative;
+    padding-bottom: 54.05%;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+.partners {
+  margin-bottom: 147px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__body {
+    position: relative;
+    padding-right: 144px;
+    padding-left: 144px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: calc(50% - 43px);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &__slider {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    margin: 0 auto;
+    max-height: 159px;
+    transition: transform 0.3s;
+  }
+}
+
+.awards {
+  margin-bottom: 190px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__body {
+    position: relative;
+    padding-right: 144px;
+    padding-left: 144px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: calc(50% - 105px);
+
+    &--prev {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+    }
+  }
+
+  &__slider {
+    padding-top: 50px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  &__image-box {
+    margin: auto 0;
+  }
+
+  &__img {
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  &__text {
+    margin-top: 38px;
+    min-height: 100px;
+  }
+}

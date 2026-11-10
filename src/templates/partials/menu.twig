@@ -1,0 +1,27 @@
+<div class="menu">
+	<div class="menu__container container">
+		<ul class="menu__list">
+			<li class="menu__item">
+				<a class="menu__link" href="services.html">Услуги</a>
+			</li>
+
+			<li class="menu__item">
+				<a class="menu__link" href="about.html">О компании</a>
+			</li>
+
+			<li class="menu__item">
+				<a class="menu__link" href="projects.html">Проекты</a>
+			</li>
+
+			<li class="menu__item">
+				<a class="menu__link" href="contacts.html">Контакты</a>
+			</li>
+		</ul>
+
+		<span class="menu__line"></span>
+	</div>
+
+	<div class="menu__container container">
+		{% include "./contact-details.twig" with {addressClass: "menu__contacts-box"} %}
+	</div>
+</div>

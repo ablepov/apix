@@ -1,0 +1,285 @@
+@media (any-hover: hover) {
+  a:hover {
+    color: var(--link-color-hover);
+  }
+
+  .link:hover::after {
+    border-color: transparent transparent transparent var(--link-color-hover);
+  }
+
+  .link-triangle:hover::after {
+    border-color: transparent var(--link-color-hover) transparent transparent;
+  }
+
+  .btn {
+    &--left:hover::before {
+      border-color: transparent var(--orange) transparent transparent;
+    }
+
+    &--right:hover::before {
+      border-color: transparent transparent transparent var(--orange);
+    }
+  }
+
+  .header {
+    &--open-menu .header__logo:hover,
+    &--services .header__logo:hover {
+      filter: invert(1%) sepia(1%) saturate(18%) hue-rotate(34deg) brightness(106%) contrast(100%);
+    }
+
+    &__logo:hover {
+      filter: invert(23%) sepia(30%) saturate(6953%) hue-rotate(349deg) brightness(98%) contrast(88%);
+    }
+  }
+
+  .lang {
+    &:hover::after {
+      border-color: var(--link-color-hover);
+    }
+
+    &:hover::before {
+      background-color: var(--link-color-hover);
+    }
+
+    &__select:hover {
+      color: var(--link-color-hover);
+    }
+  }
+
+  .project-carousel__img:hover {
+    box-shadow: 4px 10px 10px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+  }
+
+  .projects__item:hover .projects__img {
+    transform: scale(1.4);
+  }
+
+  .marquee3k:hover {
+    z-index: 1;
+  }
+
+  .team__img:hover {
+    box-shadow: 4px 10px 10px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+  }
+
+  .partners__img:hover {
+    transform: scale(1.1);
+  }
+
+  .awards__img:hover {
+    box-shadow: 4px 10px 10px 0 rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
+  }
+
+  a.services-page__link:hover {
+    color: var(--gray);
+  }
+
+  a.services-page__link:hover::before {
+    transform: translate(0, 0);
+  }
+
+  a.services-page__link:hover .services-page__img {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(2deg) brightness(102%) contrast(103%);
+  }
+
+}
+
+@media (max-height: @height-short) {
+  .contacts-box {
+    font-size: 18px;
+
+    &::before {
+      width: 150px;
+      height: 150px;
+    }
+
+    &__address {
+      margin-bottom: 8px;
+    }
+
+    &__schedule {
+      margin-bottom: 28px;
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .menu {
+    padding-top: 90px;
+
+    &__container:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__list {
+      padding-bottom: 10px;
+    }
+
+    &__item {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .contacts {
+    &__body {
+      padding-top: 90px;
+      padding-bottom: 15px;
+    }
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__contacts-box {
+      font-size: 16px;
+    }
+
+    &__list {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (any-hover: none) {
+  .footer--project {
+    display: block;
+  }
+
+  .services {
+    &__body {
+      max-width: none;
+    }
+
+    &__link--active {
+      color: var(--link-color);
+    }
+  }
+
+  .services-info {
+    display: none;
+  }
+
+  .inner-project {
+    &__body {
+      height: auto !important;
+      display: block;
+      max-width: 1760px;
+      padding: 125px 20px 0;
+      padding-top: 100px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__item {
+      padding-right: 0;
+    }
+
+    .inner-project__progress-bar {
+      display: none;
+    }
+  }
+
+  .project-hero {
+    margin-bottom: 48px;
+    padding-left: 0;
+
+    &__descr {
+      text-transform: uppercase;
+    }
+  }
+
+  .image-box {
+    width: 100%;
+    padding-bottom: 55.2%;
+    margin-bottom: 98px;
+    position: relative;
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .project-text {
+    margin-bottom: 25px;
+
+    &__wrapper {
+      transform: translate(0, 10%);
+    }
+  }
+
+  .project-images {
+    &__list {
+      display: block;
+      height: auto;
+      writing-mode: horizontal-tb;
+      margin-bottom: 100px;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    &__item {
+      flex: none;
+      width: 100%;
+      padding-right: 0;
+      height: auto;
+      padding-bottom: 78.16%;
+      margin-left: 0;
+      transform: translate(0, 10%);
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+
+      &:nth-child(3n-1) {
+        margin-bottom: 20px;
+      }
+
+      &:nth-child(3n-1),
+      &:nth-child(3n+3) {
+        flex: none;
+        padding-bottom: 50.12%;
+        width: 100%;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .project-links {
+    position: static;
+    bottom: 0;
+    margin-top: 75px;
+    opacity: 1;
+    margin-bottom: 101px;
+    --link-color: var(--orange);
+    padding-right: 20px;
+    padding-left: 20px;
+
+    &__link {
+      color: var(--orange);
+    }
+  }
+
+  .scroll-class {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@media (max-height: @height-compact) {
+  .contacts__body {
+    padding-top: 96px;
+    padding-bottom: 30px;
+  }
+}
+
+.webp .main-hero__aria {
+  background-image: url(../images/house-full.webp);
+}

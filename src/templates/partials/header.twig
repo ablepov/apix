@@ -1,0 +1,55 @@
+<header class="header{% if page == "inner-service" %} header--services{% endif %}">
+	<div class="header__container container">
+		<nav class="header__nav" aria-label="Основное меню">
+			<a class="header__logo logo" href="index.html">
+				<img class="logo__img" src="images/logo.svg" width="114" height="58" alt="АПИКС — главная">
+			</a>
+
+			<button class="header__burger burger" type="button">
+				<span class="sr-only">Открыть меню</span>
+				<span class="burger__line"></span>
+			</button>
+
+			<ul class="header__list">
+				<li class="header__item">
+					<a class="header__link" href="services.html">Услуги</a>
+				</li>
+
+				<li class="header__item">
+					<a class="header__link" href="projects.html">Проекты</a>
+				</li>
+
+				<li class="header__item">
+					<a class="header__link" href="about.html">О компании</a>
+				</li>
+
+				<li class="header__item">
+					<a class="header__link" href="contacts.html">Контакты</a>
+				</li>
+			</ul>
+
+			<ul class="header__list">
+				<li class="header__item-left">
+					<a class="header__link link-triangle" href="https://api.whatsapp.com/send?phone=79142071485" target="_blank">WhatsApp</a>
+				</li>
+
+				<li class="header__item-left">
+					<a class="header__link" href="tel:+79142071485">+7 (914) 207-14-85</a>
+				</li>
+
+				<li class="header__item-left">
+					<a class="header__link" href="tel:+79242192804">+7 (924) 219-28-04</a>
+				</li>
+			</ul>
+
+			<div class="header__select lang">
+				<label class="sr-only" for="lang">Выберите язык</label>
+				<select class="lang__select " name="lang" id="lang">
+					<option class="lang__item" value="">Ru</option>
+					<option class="lang__item" value="">En</option>
+					<option class="lang__item" value="">Ch</option>
+				</select>
+			</div>
+		</nav>
+	</div>
+</header>

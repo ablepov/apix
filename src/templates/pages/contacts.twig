@@ -1,0 +1,24 @@
+{% extends "../layout.twig" %}
+
+{% block title %}Контакты — АПИКС{% endblock %}
+
+{% block content %}
+<section class="contacts">
+	<div class="contacts__content">
+		<div class="contacts__container container">
+			<div class="contacts__body">
+				<h1 class="contacts__title title-page">КОНТАКТЫ</h1>
+
+				{% include "../partials/contact-details.twig" with {addressClass: "contacts__contacts-box"} %}
+
+				<ul class="contacts__list">
+					<li class="contacts__item">ОГРН 1202700011623</li>
+					<li class="contacts__item">ИНН 2723210814</li>
+					<li class="contacts__item">БИК 044525974</li>
+					<li class="contacts__item">КПП 272401001</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

@@ -1,0 +1,54 @@
+.menu {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  height: 100%;
+  background-color: var(--orange);
+  padding-top: 105px;
+  --link-color: var(--gray);
+  color: var(--gray);
+  pointer-events: none;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-bottom: 30px;
+
+  &--open {
+    visibility: visible;
+    pointer-events: all;
+    opacity: 1;
+  }
+
+  &__container {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 131px;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    background-color: var(--gray);
+    width: calc(100% + 40px);
+    height: 1px;
+    left: -20px;
+  }
+
+  &__list {
+    padding-bottom: 25px;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+}

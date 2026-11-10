@@ -1,0 +1,144 @@
+.link {
+  display: flex;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1.166;
+  color: var(--link-color);
+
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: calc(1em - 10px) 0 calc(1em - 10px) calc((1em - 12px) * 2);
+    border-color: transparent transparent transparent var(--link-color);
+    margin-left: 11px;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    &::after {
+      transform: rotate(180deg);
+      margin-left: 0;
+      margin-right: 11px;
+    }
+  }
+}
+
+.link-triangle {
+  display: flex !important;
+  align-items: center;
+  color: var(--link-color);
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 calc(1em - 5px) calc(1em - 5px) 0;
+    border-color: transparent var(--link-color) transparent transparent;
+    margin-left: 5px;
+    transition: border-color 0.3s;
+  }
+}
+
+.title {
+  font-size: 64px;
+  line-height: 1.156;
+  text-transform: uppercase;
+}
+
+.title-page {
+  font-size: 85px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.burger {
+  width: 30px;
+  height: 22px;
+  position: relative;
+  display: none;
+
+  &::before,
+  &::after {
+    content: "";
+    transition: background-color 0.3s;
+  }
+
+  &__line,
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color-burger);
+    pointer-events: none;
+  }
+
+  &__line {
+    top: calc(50% - 2px);
+  }
+
+  &::before {
+    top: 0;
+    transition: top 0.3s, transform 0.3s;
+  }
+
+  &::after {
+    bottom: 0;
+    transition: bottom 0.3s, transform 0.3s;
+  }
+
+  &--active {
+    .burger__line {
+      display: none;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      top: calc(50% - 2px);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      bottom: calc(50% - 2px);
+    }
+  }
+}
+
+.btn {
+  height: 71px;
+  width: 71px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &--left::before,
+  &--right::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    transition: border-color 0.3s;
+  }
+
+  &--left::before {
+    margin-right: auto;
+    border-width: 30px 53px 30px 0;
+    border-color: transparent var(--white) transparent transparent;
+  }
+
+  &--right::before {
+    margin-left: auto;
+    border-width: 30px 0 30px 53px;
+    border-color: transparent transparent transparent var(--white);
+  }
+}

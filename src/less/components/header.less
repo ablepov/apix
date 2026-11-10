@@ -1,0 +1,125 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  padding: 33px 0 10px;
+  --color-burger: var(--white);
+  transition: background-color 0.5s;
+
+  &--fixed {
+    background-color: var(--gray);
+  }
+
+  &--open-menu,
+  &--services {
+    --link-color: var(--gray);
+    --link-color-hover: var(--white);
+    --color-burger: var(--gray);
+    background-color: var(--orange);
+  }
+
+  &--open-menu .header__logo,
+  &--services .header__logo {
+    filter: invert(85%) sepia(1%) saturate(386%) hue-rotate(327deg) brightness(95%) contrast(92%);
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    transition: filter 0.3s;
+    margin-right: 71px;
+    flex: 0 0 114px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  &__link {
+    font-size: 18px;
+    display: block;
+    color: var(--link-color);
+  }
+
+  &__item-left:not(:last-child) {
+    margin-right: 45px;
+  }
+}
+
+.logo__img {
+  width: 100%;
+  height: auto;
+}
+
+.lang {
+  width: 60px;
+  position: relative;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 6px);
+    z-index: -1;
+    border-top: 2px solid var(--link-color);
+    border-right: 2px solid var(--link-color);
+    transform: rotate(130deg);
+    transition: border-color 0.3s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    .sprite-mask(globe);
+    background-color: var(--link-color);
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    transition: background-color 0.3s;
+  }
+
+  &__select {
+    background-color: transparent;
+    color: var(--link-color);
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 15px;
+    outline: transparent;
+    font-size: 18px;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+
+  &__item {
+    color: #000;
+  }
+}
